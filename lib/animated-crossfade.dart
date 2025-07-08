@@ -34,27 +34,16 @@ class _MyAppState extends State<MyApp> {
             secondChild: Center(
               child: Text(
                 "Shajibul",
-                style: TextStyle(
-                    fontSize: 59,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    height: 5,
-                    backgroundColor: Colors.red),
+                style: TextStyle(fontSize: 59),
               ),
             ),
             crossFadeState: showFirst
                 ? CrossFadeState.showFirst
                 : CrossFadeState.showSecond,
-            duration: const Duration(seconds: 10),
+            duration: const Duration(seconds: 2),
           ),
         ),
       ),
     );
   }
 }
-// This code creates a Flutter application that uses an AnimatedCrossFade widget.
-// The widget transitions between two child widgets: a button and a text label.
-// When the button is pressed, it triggers a state change that causes the text label to appear,
-// and the button to disappear, with a smooth animation lasting 2 seconds.
-// The initial state shows the button, and pressing it changes the state to show the text label.
-// The text label displays "Shajibul" in a large font size.
